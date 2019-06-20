@@ -13,6 +13,8 @@
 		E557ABA322BAD4B400C33FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E557ABA222BAD4B400C33FA4 /* Assets.xcassets */; };
 		E557ABA622BAD4B400C33FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E557ABA422BAD4B400C33FA4 /* LaunchScreen.storyboard */; };
 		E557ABB022BAD7B000C33FA4 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABAF22BAD7B000C33FA4 /* Trie.swift */; };
+		E557ABB522BB509500C33FA4 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABB422BB509500C33FA4 /* RoundedButton.swift */; };
+		E557ABB822BB517900C33FA4 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABB722BB517900C33FA4 /* RoundedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E557ABA522BAD4B400C33FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E557ABA722BAD4B400C33FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E557ABAF22BAD7B000C33FA4 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		E557ABB422BB509500C33FA4 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../../../../../Documents/RoundedButton.swift; sourceTree = "<group>"; };
+		E557ABB722BB517900C33FA4 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedTextField.swift; path = ../../../../../Documents/RoundedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				E557ABAE22BAD6F000C33FA4 /* AppDelegate */,
 				E557ABB122BAD81300C33FA4 /* AppManager */,
 				E557ABAD22BAD6DF00C33FA4 /* Algorithm */,
+				E557ABB222BB507800C33FA4 /* Views */,
 				E557AB9D22BAD4B200C33FA4 /* ViewController.swift */,
 				E557AB9F22BAD4B300C33FA4 /* Main.storyboard */,
 				E557ABA222BAD4B400C33FA4 /* Assets.xcassets */,
@@ -89,6 +94,31 @@
 			children = (
 			);
 			path = AppManager;
+			sourceTree = "<group>";
+		};
+		E557ABB222BB507800C33FA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E557ABB622BB516200C33FA4 /* TextField */,
+				E557ABB322BB508400C33FA4 /* Button */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E557ABB322BB508400C33FA4 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E557ABB422BB509500C33FA4 /* RoundedButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		E557ABB622BB516200C33FA4 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				E557ABB722BB517900C33FA4 /* RoundedTextField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +194,9 @@
 			files = (
 				E557ABB022BAD7B000C33FA4 /* Trie.swift in Sources */,
 				E557AB9E22BAD4B200C33FA4 /* ViewController.swift in Sources */,
+				E557ABB822BB517900C33FA4 /* RoundedTextField.swift in Sources */,
 				E557AB9C22BAD4B200C33FA4 /* AppDelegate.swift in Sources */,
+				E557ABB522BB509500C33FA4 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

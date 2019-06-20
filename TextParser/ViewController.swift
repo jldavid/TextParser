@@ -7,6 +7,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupGestures()
+        setupTextField()
         loadViews()
         loadWords()
     }
@@ -17,10 +19,17 @@ class ViewController: UIViewController {
     
     func loadViews() {
         searchField.returnKeyType = .done
+        resultsTextView.isSelectable = false
     }
     
     func loadWords() {
         
+    }
+    
+    func dismissKeyboard() {
+        UIView.animate(withDuration: 0.2) {
+            self.searchField.resignFirstResponder()
+        }
     }
 }
 
@@ -38,18 +47,11 @@ extension ViewController: UITextFieldDelegate {
 extension ViewController: UIGestureRecognizerDelegate {
     func setupGestures() {
         let screenTap = UITapGestureRecognizer(target: self, action: #selector(screenTapped(_:)))
-        screenTap.cancelsTouchesInView = false
-        view.addGestureRecognizer(screenTap)
+        self.view.addGestureRecognizer(screenTap)
     }
     
     @objc func screenTapped(_ sender: UITapGestureRecognizer) {
         dismissKeyboard()
-    }
-    
-    func dismissKeyboard() {
-        UIView.animate(withDuration: 0.2) {
-            self.searchField.resignFirstResponder()
-        }
     }
 }
 
