@@ -5,6 +5,8 @@ class ViewController: UIViewController {
     @IBOutlet var searchField: UITextField!
     @IBOutlet var resultsTextView: UITextView!
     
+    let tree = PrefixTree()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGestures()
@@ -14,7 +16,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func parse(_ sender: Any) {
-        
+        print(tree.contains(word: "best"))
+        print(tree.contains(word: "bes"))
     }
     
     func loadViews() {
@@ -23,7 +26,8 @@ class ViewController: UIViewController {
     }
     
     func loadWords() {
-        
+        tree.insert(word: "best")
+        tree.insert(word: "bes")
     }
     
     func dismissKeyboard() {

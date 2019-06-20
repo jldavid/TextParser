@@ -12,9 +12,10 @@
 		E557ABA122BAD4B300C33FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E557AB9F22BAD4B300C33FA4 /* Main.storyboard */; };
 		E557ABA322BAD4B400C33FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E557ABA222BAD4B400C33FA4 /* Assets.xcassets */; };
 		E557ABA622BAD4B400C33FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E557ABA422BAD4B400C33FA4 /* LaunchScreen.storyboard */; };
-		E557ABB022BAD7B000C33FA4 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABAF22BAD7B000C33FA4 /* Trie.swift */; };
+		E557ABB022BAD7B000C33FA4 /* PrefixTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABAF22BAD7B000C33FA4 /* PrefixTreeNode.swift */; };
 		E557ABB522BB509500C33FA4 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABB422BB509500C33FA4 /* RoundedButton.swift */; };
 		E557ABB822BB517900C33FA4 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABB722BB517900C33FA4 /* RoundedTextField.swift */; };
+		E557ABBA22BB558A00C33FA4 /* PrefixTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557ABB922BB558A00C33FA4 /* PrefixTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		E557ABA222BAD4B400C33FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E557ABA522BAD4B400C33FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E557ABA722BAD4B400C33FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E557ABAF22BAD7B000C33FA4 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		E557ABAF22BAD7B000C33FA4 /* PrefixTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixTreeNode.swift; sourceTree = "<group>"; };
 		E557ABB422BB509500C33FA4 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../../../../../Documents/RoundedButton.swift; sourceTree = "<group>"; };
 		E557ABB722BB517900C33FA4 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedTextField.swift; path = ../../../../../Documents/RoundedTextField.swift; sourceTree = "<group>"; };
+		E557ABB922BB558A00C33FA4 /* PrefixTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,8 @@
 		E557ABAD22BAD6DF00C33FA4 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				E557ABAF22BAD7B000C33FA4 /* Trie.swift */,
+				E557ABAF22BAD7B000C33FA4 /* PrefixTreeNode.swift */,
+				E557ABB922BB558A00C33FA4 /* PrefixTree.swift */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -192,9 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E557ABB022BAD7B000C33FA4 /* Trie.swift in Sources */,
+				E557ABB022BAD7B000C33FA4 /* PrefixTreeNode.swift in Sources */,
 				E557AB9E22BAD4B200C33FA4 /* ViewController.swift in Sources */,
 				E557ABB822BB517900C33FA4 /* RoundedTextField.swift in Sources */,
+				E557ABBA22BB558A00C33FA4 /* PrefixTree.swift in Sources */,
 				E557AB9C22BAD4B200C33FA4 /* AppDelegate.swift in Sources */,
 				E557ABB522BB509500C33FA4 /* RoundedButton.swift in Sources */,
 			);
